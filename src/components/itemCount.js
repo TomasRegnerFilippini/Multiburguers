@@ -1,9 +1,9 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { cartContext } from "./CartContextComponent";
 
-const ItemCount = ({stock, initial, onAdd , product}) =>{
-    const [count , setCount] = useState(0);
+const ItemCount = ({stock, initial, onAdd , product  }) =>{
+    const [count , setCount] = useState(1);
     const {cart , addToCart } = useContext(cartContext);
     const [removeButton , setRemoveButton] = useState(false);
 
@@ -20,11 +20,15 @@ const ItemCount = ({stock, initial, onAdd , product}) =>{
 
     onAdd = count;
 
-    const addCart = (product, count) => {
-       addToCart();
+    const addCart = () => {
+        addToCart(product,count);
         alert("se agreron al carrito"+" " + onAdd + " " + "unidades")
         setRemoveButton(true);
     }
+    useEffect(() =>{
+        console.log(cart)
+    },[cart])
+
     return(
         <div>
            <button className="stockButtom" onClick={addClick}>+</button>{count} 
