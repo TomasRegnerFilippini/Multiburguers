@@ -5,12 +5,12 @@ import ItemCount from "./itemCount";
 
 const ItemDetail =({product}) => {
 
-    return <div>
-                <h1> {product.name} </h1>
-                <img style= {{height:"400px"}} src={product.img} alt ={product.name}></img>
-                <p>{product.description}</p>
-                <h2> ${product.price} </h2>
-                <p>stock: {product.stock} </p>
+    return <div className="itemDetail">
+                <h1 className="detailTitle"> {product.name} </h1>
+                <img className="detailImg" style= {{height:"400px"}} src={product.img} alt ={product.name}></img>
+                <p className="detailDescription">{product.description}</p>
+                <h2 className="detailPrice"> ${product.price} </h2>
+                <p className="detailStock">stock: {product.stock} </p>
                 <ItemCount 
                   product = {product}
                   stock={product.stock}

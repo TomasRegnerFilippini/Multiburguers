@@ -24,7 +24,7 @@ const ItemDetailContainer =() => {
              });
 
             }, []);
-            return<ItemDetail product={product}/>;
+            return<div className="detailContainer"><ItemDetail product={product}/></div>;
 }
 
 

@@ -1,3 +1,7 @@
+.mainBackground{
+  background-color:rgb(241, 200, 147);
+
+}
 .topMenu{
   display: flex;
   justify-content: space-around;
@@ -15,28 +19,124 @@
 .menuList li:hover{
   transform:scale(1.3) ;
 }
-.cartIcon{
-  margin-top: 100px;
-  width: 0;
-  
-}
 
-
-.seccion{
+.cartContainer{
+  margin-top: 30px;
   text-decoration: none;
   color: black;
-  margin-right: 20px;
-  font-size: 20px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: palevioletred;
-  padding: 7px;
-  border-radius: 10px;
 }
+
 
 .stockButtom{
   width: 100px;
   height: 50px;
   font-size: 20px;
+}
+
+.mainTitle{
+  color: black;
+  font-size: 20px;
+  
+}
+.subTitle{
+  color: black;
+  margin: 12px;
+  background-color: rgb(244, 122, 163);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 7px;
+  border-radius: 10px;
+}
+/*------------------------ cards-----------------------------------------*/
+.itemsContainers{
+  display: flex;
+  justify-content: center; 
+  
+}
+.cardBackground:hover{
+  transform:scale(1.04) ;
+}
+
+.cardBackground{
+  background-color: antiquewhite;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  
+  
+}
+
+.titleName {
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  
+}
+.subrayado{
+  text-decoration: none;
+}
+
+.items{
+ font-size: 25px;
+ color:black;
+}
+/*--------------------------------------details--------------------------*/
+.detailContainer{
+  display: flex;
+  justify-content: center;
+}
+.itemDetail{
+  background-color: antiquewhite;
+  width: 40%;
+  border-radius: 10px;
+  margin: 10px;
+}
+.detailTitle{
+  text-align: center;
+}
+
+.detailImg{
+  margin-left: 80px;
+}
+.detailDescription{
+  font-size: 25px ;
+}
+/*-----------------------------------cart------------------------*/
+.cartList{
+  display: flex;
+}
+.cart{
+  background-color: bisque;
+  border-radius: 10px;
+  font-size: 70px;
+  color: black;
+  margin-bottom: 10px;
+  
+}
+.trash{
+  font-size: 70px;
+}
+
+.buyButtom{
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  background-color:wheat;
+  border-radius: 10px;
+  padding: 2px;
+}
+.buyButtom:hover{
+  transform:scale(1.04);
+}
+.check{
+  font-size: 30px;
+}
+
+.checkForm{
+  width: 400px;
+  height: 50px;
+  font-size: 30px;
 }
 
 

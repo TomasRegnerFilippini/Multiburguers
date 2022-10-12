@@ -8,20 +8,20 @@ const Cart =() => {
         <>
           {cart.map((item) =>(
             
-               <div key={item.id}>
-                 <img style= {{height:"100px"}} src ={item.img} alt ={item.name}></img>
-                {item.name  +  " " + item.count}{" "}
+               <div className="cartList" key={item.id} >
+                 <img className="cartImg" style= {{height:"100px"}} src ={item.img} alt ={item.name}></img>
+                 <div className="cart">{item.name  +  " " + item.count}{" "}</div>
               
 
-               <span onClick={()=>deleteFromCart(item.id)}>🗑️</span></div>
+               <span className="trash" onClick={()=>deleteFromCart(item.id)}>🗑️</span></div>
             
           ))};
-         <div>
+         <div className="check">
             Tienes en el carro : {totalCount} productos a pagar : {totalToPay}
 
          </div>
 
-         <Link to ="/checkout">REALIZAR PEDIDO</Link>
+         <Link className="buyButtom" to ="/checkout">REALIZAR PEDIDO</Link>
     
         </>)
  }

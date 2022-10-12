@@ -28,10 +28,10 @@ return(
       ):(
      <div>
         <h1> Terminar compra , ingrese sus datos</h1>
-        <input type="text" placeholder="name" onChange={(e)=>setName(e.target.value)}/>
-        <input type="tel" placeholder="tel"  onChange={(e)=>setTel(e.target.value)}/>
-        <input type="email" placeholder="email"  onChange={(e)=>setEmail(e.target.value)}/>
-        <button onClick={validateForm}>TERMINAR DE COMPRAR</button>
+        <input className="checkForm" type="text" placeholder="name" onChange={(e)=>setName(e.target.value)}/>
+        <input className="checkForm" type="tel" placeholder="tel"  onChange={(e)=>setTel(e.target.value)}/>
+        <input className="checkForm" type="email" placeholder="email"  onChange={(e)=>setEmail(e.target.value)}/>
+        <button  className="checkForm" onClick={validateForm}>TERMINAR DE COMPRAR</button>
       </div>)}
       </>
       )
