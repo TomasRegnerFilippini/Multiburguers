@@ -35,7 +35,8 @@ const ItemCount = ({stock, initial, onAdd , product  }) =>{
            <button className="stockButtom" onClick={lessClick}>-</button>{} 
            {removeButton? ( <>
             "producto agregado.."
-            <Link to={"/"}>Seguir comprando</Link>
+            <Link to={"/"}  className="continue">Seguir comprando</Link>
+            <Link to={"/cart"} className="continue">ir al carrito</Link>
             </>
            ) : (
            <button className="stockButtom" onClick={addCart}>Add Cart</button>)}

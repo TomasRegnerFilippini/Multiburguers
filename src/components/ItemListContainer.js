@@ -30,7 +30,7 @@ const ItemListContainer =() => {
              });
 
             }, [idCategory]);
-            return<ItemList products={products}/>
+            return<div className="productsContainer"><ItemList products={products}/></div>
 }
 
 

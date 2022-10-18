@@ -46,10 +46,26 @@
   padding: 7px;
   border-radius: 10px;
 }
+
+.continue{
+  color: black;
+  margin: 12px;
+  background-color: rgb(221, 143, 169);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 7px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.continue:hover{
+  transform:scale(1.5);
+}
 /*------------------------ cards-----------------------------------------*/
+
 .itemsContainers{
-  display: flex;
-  justify-content: center; 
+ display: grid;
+ grid-template:repeat(3, 500px) / repeat(3, 1fr) ;
+
+ 
   
 }
 .cardBackground:hover{

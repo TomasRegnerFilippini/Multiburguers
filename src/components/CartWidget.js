@@ -6,7 +6,7 @@ const CartWidget  = () => {
     const { totalCount} = useContext(cartContext);
     return(
         <div>
-            <Badge badgeContent={4} color ="secondary">
+            <Badge badgeContent={totalCount} color ="secondary">
                  <ShoppingCart/>
             </Badge>
         </div>
